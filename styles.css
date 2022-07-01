@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap");
 
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    
-}    
+}
 
+html,
+body {
+    overflow-x: hidden;
+}
 
 body {
-    background-color: #030E21;
+    background-color: #030e21;
     background-image: url(./img/Vector\ 1.svg);
     background-repeat: no-repeat;
     background-position: initial;
@@ -19,54 +22,50 @@ body {
     background-position-y: top;
 }
 
-
-
-.nav-logo{
-    font-family: 'Poppins', sans-serif;
+.nav-logo {
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 32px;
     line-height: 48px;
-    font-weight:bold;
-    color: #E5E5E5 !important;
+    font-weight: bold;
+    color: #e5e5e5 !important;
 }
 
-.nav-prop{
-    font-family: 'Poppins' sans-serif;
+.nav-prop {
+    font-family: "Poppins" sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     color: rgba(244, 244, 244, 0.7);
 }
 
-
-
 .titulo-nombre {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
-    color: #E5E5E5 !important;
+    color: #e5e5e5 !important;
 }
 
-.divisor-nombre{
+.divisor-nombre {
     height: 8px;
     width: max-content;
 }
 
 .h3-subtext {
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 135%;
-/* or 32px */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    /* or 32px */
 
-letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
 }
 
-.parra-front{
-    font-family: 'Poppins';
+.parra-front {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 0.9375rem;
@@ -74,50 +73,67 @@ letter-spacing: -0.02em;
 }
 
 .skills-titulo {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 127.9%;
     letter-spacing: 0.35538em;
-    color: #18D26E;
-    border: 8px solid #FFFFFF;
-    padding: 20px; 
+    color: #18d26e;
+    border: 8px solid #ffffff;
+    padding: 20px;
     width: 404px;
 }
-
 
 .content-section {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
 }
 
-.skills-subtext{
-    font-family: 'Poppins';
+.skills-subtext {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 45px;
     letter-spacing: 0.18538em;
-    color: #18D26E;
+    color: #18d26e;
 }
 
-.p-skills{
-    font-family: 'Montserrat';
+.p-skills {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.13538em;
-    color: #18D26E;
+    color: #18d26e;
 }
 
-
-.section-skills{
+.section-skills {
     background-image: url(./img/Vector\ 2-skills.svg);
     background-repeat: no-repeat;
 }
 
-.using-bg{
+.using-bg {
     background: rgba(9, 20, 39, 0.6);
     width: 97% !important;
 }
 
+.works-h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    /* or 60px */
+    letter-spacing: -0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #18d26e;
+}
+
+.slide-top{
+    transition: all 0.3s;
+}
+.slide-top:hover {
+    transform: translateY(-10px);
+    
+}

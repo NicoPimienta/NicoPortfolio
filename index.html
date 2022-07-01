@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css">
     <title>Nicolás Pimienta Portfolio</title>
 </head>
 
@@ -14,22 +15,48 @@
 
     <!-- Nav -->
 
-    <nav class="navbar navbar-expand-lg">
+    <!-- <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand nav-logo collapse navbar-collapse p-3" href="#">Nicolás Pimienta</a>
+            
             <div class="collapse navbar-collapse nav-prop d-flex justify-content-end" id="navbarNavAltMarkup">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <ul>
+                    <li class="nav-item"><a href=""> About</a></li>
+                    <li class="nav-item">Skills</li>
+                    <li class="nav-item">Proyects</li>
+                </ul>
+                
+                 <a class="nav-link active" aria-current="page" href="#">About</a>
                 <a class="nav-link" href="#">Skills</a>
-                <a class="nav-link" href="#">Proyects</a>
-            </div>
+                <a class="nav-link" href="#">Proyects</a> -->
+            <!-- </div>
+
         </div>
-    </nav>
-    
+    </nav> -->
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-logo collapse navbar-collapse p-3" href="#">Nicolás Pimienta</a>
+          <button class="navbar-toggler  navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-prop d-lg-flex d-md-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#">Proyects</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
 
 
 
 <!-- Arreglar la imagen hacia la derecha -->
     <!-- Frontal -->
+
     <div class="container mt-5 content-section">
         <div class="row d-flex justify-content-around">
             <div class="col-md-8 d-flex flex-column align-self-center pb-4 p-5">
@@ -43,13 +70,15 @@
                 <p class="parra-front text-muted fw-lighter mt-3">
                     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                 </p>
-                <div class="row-cols-1 me-5">
-                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-pimienta-0b43a393/"><img src="./img/SocialLinke.svg" style="width: 50px;" height="50px" alt="" srcset="" class="icon-anim"></a>
-                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-pimienta-0b43a393/"><img src="./img/Socialgithub.svg" style="width: 50px;" height="50px" alt="" srcset=""></a>
+                <!-- Social Icons -->
+                <div class="row-cols-lg-7 me-5">
+                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-pimienta-0b43a393/"><img src="./img/SocialLinke.svg" style="width: 50px;" height="50px" alt="linkedin" srcset="" class="slide-top"></a>
+                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-pimienta-0b43a393/"><img src="./img/Socialgithub.svg" style="width: 50px;" height="50px" alt="" srcset="" class="slide-top"></a>
                 </div>
             </div>
+            <!-- Foto Nicolás -->
                 <div class="col-md-4">
-                    <img alt="fotoNico" class="p-5" src="./img/nico-foto.png"/>
+                    <img alt="fotoNico" class="p-5 img-fluid" src="./img/nico-foto.png"/>
                 </div>
         </div>
     </div>
@@ -60,31 +89,31 @@
 
         <!-- Skills section -->
 
-        <section class="section-skills">
-
+        <section class="section-skills" id="fullpage">
+            
+            <!-- Tecnologias -->
     <div class="container d-flex justify-content-center">
         <h2 class="skills-titulo text-uppercase d-flex justify-content-center">skills</h2>
     </div>
 
 
-
-<div class="container-fluid using-bg">
+<div class="container-fluid  using-bg">
         <h2 class="text-uppercase d-flex justify-content-center mt-5 skills-subtext">using now:</h2>
     <div class="container mt-5">
-        <div class="row row-cols-4">
-            <div class="col d-grid justify-content-center"><img src="./img/HTML.svg" alt="" srcset="" class=""><p class="p-skills p-4 d-grid justify-content-center">HTML</p></div>
-            <div class="col d-grid justify-content-center"><img src="./img/CSS.svg" alt="" srcset=""><p class="p-skills p-4 d-grid justify-content-center ">CSS</p></div>
-            <div class="col d-grid justify-content-center"><img src="./img/SASS.svg" alt="" srcset=""><p class="p-skills p-4 text-start d-grid justify-content-center">SASS</p></div>
-            <div class="col d-grid justify-content-center"><img src="./img/JS.svg" alt="" srcset=""><p class="p-skills p-4 text-start d-grid justify-content-center">JS</p></div>
+        <div class="row">
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/HTML.svg" alt="" srcset="" class=""><p class="p-skills p-4 d-grid justify-content-center">HTML</p></div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/CSS.svg" alt="" srcset=""><p class="p-skills p-4 d-grid justify-content-center ">CSS</p></div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/SASS.svg" alt="" srcset=""><p class="p-skills p-4 text-start d-grid justify-content-center">SASS</p></div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/JS.svg" alt="" srcset=""><p class="p-skills p-4 text-start d-grid justify-content-center">JS</p></div>
         </div>
     </div>
 
     <div class="container mt-5">
-        <div class="row row-cols-4">
-            <div class="col d-grid justify-content-center"><img src="./img/BOOTSRAP.svg" alt="" srcset="" class="p-4"><p class="p-skills p-4 d-grid justify-content-center">BOOTSTRAP</p></div>
-            <div class="col d-grid justify-content-center"><img src="./img/GIT.svg" alt="" srcset="" class="p-4 "><p class="p-skills p-4 d-grid justify-content-center">GIT</p></div>
-            <div class="col d-grid justify-content-center"><img src="./img/FIGMA.svg" alt="" srcset="" class="p-4"><p class="p-skills p-4">FIGMA</p></div>
-            <div class="col d-grid justify-content-center"><img src="./img/WORDPRESS.svg"  alt="" srcset="" class="p-4"><p class="p-skills p-3 d-grid justify-content-center">WORDPRESS</p></div>
+        <div class="row">
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/BOOTSRAP.svg" alt="" srcset="" class="p-4"><p class="p-skills p-4 d-grid justify-content-center">BOOTSTRAP</p></div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/GIT.svg" alt="" srcset="" class="p-4 "><p class="p-skills p-4 d-grid justify-content-center">GIT</p></div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/FIGMA.svg" alt="" srcset="" class="p-4"><p class="p-skills p-4 d-grid justify-content-center">FIGMA</p></div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center"><img src="./img/WORDPRESS.svg"  alt="" srcset="" class="p-4"><p class="p-skills p-4 d-grid justify-content-center">WORDPRESS</p></div>
         </div>
     </div>
     <h2 class="text-uppercase d-flex justify-content-center mt-5 skills-subtext">learning:</h2>
@@ -97,6 +126,50 @@
 
 </section>
 
-    <script src="./bootstrap.js"></script>
+    <!-- Trabajos hechos -->
+<section class="content-section">
+
+    <h1 class="works-h1 d-flex justify-content-start p-5">Latest Works:</h1>
+
+<div class="container d-flex justify-content-between mt-5">
+
+    <div class="card" style="width: 18rem;">
+        <img src="./img/A&D.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Alma y Destino Landing Page</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="./img/PIweb.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Poder Interior Landing Page</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="./img/GJweb.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Guille Juarez Web</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</section>
+
+<script src="./bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.js"></script>
 </body>
 </html>
