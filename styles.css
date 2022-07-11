@@ -1,6 +1,9 @@
+/* Fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap");
+
+/* Settings */
 
 * {
     box-sizing: border-box;
@@ -21,6 +24,8 @@ body {
     background-position-x: right;
     background-position-y: top;
 }
+
+/* navegador y front */
 
 .nav-logo {
     font-family: "Poppins", sans-serif;
@@ -43,7 +48,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 49px;
     line-height: 48px;
     color: #e5e5e5 !important;
 }
@@ -57,10 +62,8 @@ body {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 27px;
     line-height: 135%;
-    /* or 32px */
-
     letter-spacing: -0.02em;
 }
 
@@ -70,7 +73,17 @@ body {
     font-weight: 400;
     font-size: 0.9375rem;
     line-height: 36px;
+    color: #ffffffbf;
 }
+
+.slide-top {
+    transition: all 0.3s;
+}
+.slide-top:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills section */
 
 .skills-titulo {
     font-family: "Poppins";
@@ -118,6 +131,8 @@ body {
     width: 97% !important;
 }
 
+/* Proyectos */
+
 .works-h1 {
     font-family: "Inter";
     font-style: normal;
@@ -127,13 +142,6 @@ body {
     letter-spacing: -0.03em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #18d26e;
-}
-
-.slide-top {
-    transition: all 0.3s;
-}
-.slide-top:hover {
-    transform: translateY(-10px);
 }
 
 .tec-card {
@@ -181,6 +189,8 @@ body {
     background-position: right;
 }
 
+/* Footer */
+
 footer {
     /* height: 105px; */
     background: #091427;
@@ -189,6 +199,5 @@ footer {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-
     color: #ffffff;
 }
