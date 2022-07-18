@@ -15,28 +15,28 @@
     <!-- Nav -->
 
 
-    <nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand nav-logo collapse navbar-collapse p-3" href="#">Nicolás Pimienta</a>
-          <button class="navbar-toggler  navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand nav-logo collapse navbar-collapse p-3" href="#about">Nicolás Pimienta</a>
+                <button class="navbar-toggler  navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse nav-prop d-lg-flex d-md-flex justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav ">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
-              <a class="nav-link" href="#">Skills</a>
-              <a class="nav-link" href="#">Proyects</a>
+                </button>
+        <div class="collapse navbar-collapse nav-prop d-lg-flex d-md-flex justify-content-end me-5" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-md-5">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+                <a class="nav-link" href="#section1">Skills</a>
+                <a class="nav-link" href="#proyects">Proyects</a>
             </div>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
 
 
 
 
 <!-- Arreglar la imagen hacia la derecha -->
     <!-- Frontal -->
-    <div class="container mt-5 content-section mb-5 mb-md-5 min-vh-100" >
+    <div class="container mt-2 content-section mb-2  min-vh-100" id="about" >
         <div class="row d-flex justify-content-around">
             <div class="col-md-8 d-flex flex-column align-self-center pb-4 p-5">
                 <h2 class="titulo-nombre">
@@ -55,6 +55,7 @@
                     <a href="https://github.com/NicoPimienta"><img src="./img/Socialgithub.svg" style="width: 50px;" height="50px" alt="" srcset="" class="slide-top"></a>
                 </div>
             </div>
+
             <!-- Foto Nicolás -->
                 <div class="col-md-4">
                     <img alt="fotoNico" class="p-5 img-fluid" src="./img/nico-foto.png"/>
@@ -68,7 +69,7 @@
 
         <!-- Skills section -->
 
-        <section class="section-skills min-vh-100" >
+<section class="section-skills min-vh-100" id="section1" >
             
             <!-- Tecnologias -->
     <div class="container d-flex justify-content-center">
@@ -99,9 +100,9 @@
     <div class="container mt-5">
         <div class="row row-cols-4 justify-content-around">
             <div class="col d-grid justify-content-center"><img src="./img/REACT.svg" alt="" srcset="" class=""><p class="p-skills p-4 d-grid justify-content-center">REACT</p></div>
-            <div class="col d-grid justify-content-center"><img src="./img/logos_tailwindcss.svg" alt="" srcset=""><p class="p-skills p-4 d-grid justify-content-center">TAILWIND CSS</p></div>
+            <div class="col d-grid justify-content-center"><img src="./img/logos_tailwindcss.svg" alt="" class="p-2" srcset=""><p class="p-skills p-4 d-grid  justify-content-center">TAILWIND</p></div>
         </div>
-</div>
+    </div>
 
 </section>
 
@@ -109,23 +110,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     <!-- Trabajos hechos -->
-<section class="content-section proyects-section mt-5 min-vh-100">
+
+
+
+<section class="content-section proyects-section mt-5 min-vh-100" id="proyects">
 
     <h1 class="works-h1 d-flex justify-content-center mt-5">Latest Works:</h1>
 
-<div class="container mt-5">
-    <div class="row d-flex justify-content-between">
+<div class="container-fluid mt-5">
+    <div class="row d-flex justify-content-around">
 
     <div class="card mt-5 mt-md-0 card-bg p-3 " style="width: 100%; max-width: 25rem;">
         <img src="./img/A&D.png" class="card-img-top" alt="Alma y Destino Web">
@@ -170,13 +164,30 @@
             </div>
     </div>
 
+    <div class="card mt-5 mt-md-0 card-bg p-3 " style="width: 100%; max-width: 25rem;">
+        <img src="./img/web-app-Valpo 1.png" class="card-img-top img-fluid" alt="bmi calculator">
+        <div class="card-body">
+            <h5 class="card-title card-h1-color  d-flex justify-content-center">BMI calculator Web App </h5>
+            <div class="container d-flex justify-content-start gap-2 mt-2 mb-2">
+                <span class="tec-card">HTML</span><span class="tec-card">CSS</span><span class="tec-card">Javascript</span><span class="tec-card">Git</span><span class="tec-card">Sass</span>
+            </div>
+            <p class="card-text card-p-color lh-base">This was my first application that i made for the javascript course on Coderhouse.This application calculates the BMI and is integrated into the project of the first web development course</p>
+            <br>
+            <a href="https://github.com/NicoPimienta/Valpo-Center"><img src="./img/code.svg" alt="" srcset=""></a>
+            <a href="https://nicopimienta.github.io/Valpo-Center/Paginas/SimuladorIMC.html"><img src="./img/demo.svg" alt="" srcset=""></a>
+        </div>
+    </div>
+
+
     </div>
 </div>
-
 
 </section>
 
 <footer class=" d-flex justify-content-center p-3">🎈 2022 Nicolás Pimienta. </footer>
+
+</script>
+
 
 <script src="./bootstrap.js"></script>
 
